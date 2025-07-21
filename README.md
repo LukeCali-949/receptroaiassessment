@@ -30,7 +30,7 @@ When the user drops or selects a file on the frontend, I read it as an array buf
 When generating the audio response, I turn the generated audio data into a base64 string that be easily sent to the client and used as a source in an <audio> element.
 
 
-## HOW TO SWAP IN DIFFERENT TRANSCRIPTION, INTERPRETATION, SYNTHESIS, OR OCR ENGINE
+## How to swap in different transcription, interpretation, synthesis, or OCR engine
 I used the openai api for all these processes, so I made a openai.ts file so I could reuse the object without declaring it every time I used it,
 but if one wanted to use a different provider, they would have to replace all openai references with another provider that has all these same
 capabilities, there are many out there, Antrophic, Gemini (Google), etc, but just have to replace openai references with the specific provider (along
